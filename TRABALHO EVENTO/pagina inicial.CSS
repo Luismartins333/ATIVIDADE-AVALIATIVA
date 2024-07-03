@@ -1,0 +1,506 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('scary-dark-walls-long-black-concrete-cement-texture-background.jpg');
+    background-size: cover; 
+    background-position: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logoFLA {
+    display: flex;
+    align-items: center;
+}
+
+.logoFLA img {
+    height: 40px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: black; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.Formulariomenu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width .3s;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Formulariomenu a:hover::after {
+    width: 100%;
+}
+
+.menu a:hover {
+    color: #5e1d25; 
+}
+
+.menu a.active {
+    color: #630404; 
+}
+
+.menu a.active::after {
+    background: #630404; 
+    width: 100%;
+}
+
+.menu-image img {
+    height: 50px;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color:  #ff8800;
+}
+
+.banner img {
+    width: 100%;
+    height:370px;
+    object-fit: cover;
+    filter: brightness(60%);
+    box-shadow: #333;
+}
+
+.bannerOFC {
+    position: relative;
+    text-align: center;
+    color:  #ff8800;
+}
+
+.bannerOFC img {
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    filter: brightness(60%);
+    box-shadow: #333;
+}
+
+.bannersPorts {
+    position: relative;
+    text-align: center;
+    color:  #ff8800;
+}
+
+.bannersPorts img {
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    filter: brightness(60%);
+    box-shadow: #333;
+}
+
+.banner-text h1 {
+    font-size: 35px; 
+    margin: 0;
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+    font-style: italic; 
+    border-top: 2px solid #ccc;
+    font-family:Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 15px; 
+    margin: 20px 10;
+    color: #d1d1d1;
+}
+
+.banner-text button {
+    background-color: #360303;
+    color:  #ff8800;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px; 
+}
+
+.stars {
+    width: 20%;
+    height:80px;
+}
+
+.banner-text button:hover {
+    background-color: #4d0202;
+}
+
+.blocks {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0 20px;
+    padding-left: 5px;
+}
+
+.block {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgb(207, 206, 206);
+    overflow: hidden;
+    width: 45%;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 20px; 
+    font-weight: bold;
+}
+
+.block img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.block p {
+    font-size: 30px;
+    margin: 20px 0;
+    color: #080808;
+}
+
+.block button {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px; 
+    margin-top: 10px; 
+    margin-bottom: 20px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.block button:hover {
+    background-color: #4d0202;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    align-items: flex-start;
+}
+
+form label {
+    margin: 10px 0 5px;
+    text-align: left; 
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; 
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; 
+    max-width: 200px;
+    margin: 10px auto;
+}
+
+form button:hover {
+    background-color: #f78f08;
+}
+
+.additional-info {
+    padding: 40px 20px; 
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+.info-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.info-image {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.info-image img {
+    max-width: 110%; 
+    height: auto;
+}
+
+.info-text {
+    flex: 1; 
+    text-align: left; 
+    font-style: italic;
+}
+
+.info-text h2 {
+    margin-top: 0; 
+}
+
+.info-text p {
+    color: #c2c2c2;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.interactive-blocks {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.interactive-block {
+    background-color: #ff3c0050;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    align-self: flex-start;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comentario h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.comentario p {
+    font-size: 14px; 
+    margin: 0; 
+    text-align: left; 
+}
+
+.rodape {
+    background-color: #ffffff00; 
+    text-align: center; 
+    padding: 20px 5px;
+    padding-top: 30px; 
+    width: 100vh;
+    margin: 30px auto;
+    border-radius: 10px; 
+}
+
+.rodape .logo {
+    max-width: 60px; 
+    height: auto;
+    margin-bottom: 0;     
+}
+
+.rodape p {
+    font-size: 16px;
+    color: #9b9b9b;
+    margin: 0;  
+}
+
+.blocksOFC {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    padding: 0 5px;
+    padding-left: 5px;
+}
+
+.blockOFC {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgb(207, 206, 206);
+    overflow: hidden;
+    width: 40%;
+    height: 400px;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.blockOFC img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blockOFC h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #000000;
+    text-align: center;
+}
+
+.blockOFC p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #2e2e2e;
+    text-align: justify;
+}
+
+.blockOFC button {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.blockOFC button:hover {
+    background-color: #4d0202;
+}
+
+
+.blocksSports {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    padding: 0 5px;
+    padding-left: 5px;
+}
+
+.blockSports {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgb(207, 206, 206);
+    overflow: hidden;
+    width: 40%;
+    height: 400px;
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.blockSports img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blockSports h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #000000;
+    text-align: center;
+}
+
+.blockSports p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #2e2e2e;
+    text-align: justify;
+}
+
+.blockSports button {
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.blockSports button:hover {
+    background-color: #4d0202;
+}
+
+.FORMULARIO {
+    margin-top: 50px;
+}
